@@ -1,0 +1,84 @@
+.about-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.about__title-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .about__title-container > h1 {
+    font-size: 80px;
+    color: #494848;
+    padding: 25px;
+  }
+  
+  .about__title-container > h2 {
+    font-size: 40px;
+    color: #494848;
+  }
+
+  #intro {
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #494848;
+    max-width: 900px;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .lb {
+    border-radius: 20px;
+    width: 600px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .about__title-container > h1 {
+      font-size: 60px;
+      margin-top: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .about__title-container > h2 {
+      font-size: 35px;
+    }
+
+    .lb {
+      width: 500px;
+    }
+
+    #intro {
+      font-size: 25px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about__title-container > h1 {
+      font-size: 55px;
+    }
+
+    .about__title-container > h2 {
+      font-size: 28px;
+    }
+
+    .lb {
+      width: 300px;
+    }
+  
+    #intro {
+      font-size: 19px;
+      max-width: 400px;
+      margin-top: 1rem;
+    }
+  }
+  

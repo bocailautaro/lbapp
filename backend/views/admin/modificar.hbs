@@ -1,0 +1,23 @@
+<div class="container" style="margin: 100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h2>Modificá la entrada del Blog</h2>
+            <input type="hidden" value="{{entrada.id}}" name="id">
+            <form action="/admin/blog/modificar" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" value="{{entrada.titulo}}" name="titulo">
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-control" name="subtitulo">{{entrada.subtitulo}}</textarea>
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-control" name="cuerpo">{{entrada.cuerpo}}</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

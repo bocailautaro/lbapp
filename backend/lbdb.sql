@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-11-2021 a las 03:08:43
+-- Tiempo de generación: 28-11-2021 a las 14:28:59
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.12
 
@@ -31,8 +31,16 @@ CREATE TABLE `blog` (
   `id` int(15) NOT NULL,
   `titulo` varchar(250) NOT NULL,
   `subtitulo` text NOT NULL,
-  `cuerpo` text NOT NULL
+  `cuerpo` text NOT NULL,
+  `img_id` varchar(250) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `blog`
+--
+
+INSERT INTO `blog` (`id`, `titulo`, `subtitulo`, `cuerpo`, `img_id`) VALUES
+(0, 'Primera Entrada', 'Hola!', 'Que tal?', 'vhqtsgq8vxzr6isqkquh');
 
 -- --------------------------------------------------------
 
@@ -58,6 +66,12 @@ INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
 --
 
 --
+-- Indices de la tabla `blog`
+--
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -66,6 +80,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `blog`
+--
+ALTER TABLE `blog`
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

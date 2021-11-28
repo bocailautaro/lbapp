@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import { ButtonHero } from './ButtonHero';
-import './HeroSection.css';
 import { motion } from 'framer-motion';
 
 function HeroSection() {

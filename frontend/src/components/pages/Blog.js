@@ -28,7 +28,7 @@ const Blog = (props) => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.1}}
         >
-            <h1>Bienvenidos al Blog de LB</h1>
+            <h1>Bienvenidos al Blog</h1>
             {loading ? (
                 <p>Cargando...</p>
             ) : (

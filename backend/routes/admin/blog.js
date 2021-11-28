@@ -7,7 +7,7 @@ const uploader = util.promisify(cloudinary.uploader.upload);
 const destroy = util.promisify(cloudinary.uploader.destroy);
 
 /* GET blog page. */
-router.get('/', async function(req, res, next) {
+router.get('/', async function (req, res, next) {
 
   var blog = await blogModel.getBlog();
 
@@ -49,8 +49,7 @@ router.post('/agregar', async (req, res, next) => {
       var img_id = '';
       if(req.files && Object.keys(req.files).length > 0) {
         imagen = req.files.imagen;
-        img_id = (await uploader(imagen.tempFilePath)).
-        public_id;
+        img_id = (await uploader(imagen.tempFilePath)).public_id;
       }
       
       if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
@@ -61,7 +60,7 @@ router.post('/agregar', async (req, res, next) => {
 
           res.redirect('/admin/blog')
       } else {
-          res.render('/admin/agregar', {
+          res.render('admin/agregar', {
               layout: 'admin/layout',
               error: true,
               message: 'Se requiere completar todos los campos para terminar la acción'
@@ -77,7 +76,7 @@ router.post('/agregar', async (req, res, next) => {
   }
 })
 
-router.get('/eliminar/:id', async (req, res, next) => {
+router.get('/eliminar/:id', async (req, res) => {
   var id = req.params.id;
 
   let entrada = await blogModel.getBlogById(id);
@@ -89,7 +88,7 @@ router.get('/eliminar/:id', async (req, res, next) => {
   res.redirect('/admin/blog');
 });
 
-router.get('/modificar/:id', async (req, res, next) => {
+router.get('/modificar/:id', async (req, res) => {
   var id = req.params.id;
   console.log(req.params.id);
   var entrada = await blogModel.getBlogById(id);
@@ -100,7 +99,7 @@ router.get('/modificar/:id', async (req, res, next) => {
   });
 });
 
-router.post('/modificar', async (req, res, next) => {
+router.post('/modificar', async (req, res) => {
   try {
 
     let img_id = req.body.img_original;
@@ -126,11 +125,12 @@ router.post('/modificar', async (req, res, next) => {
       cuerpo: req.body.cuerpo,
       img_id
     }
-    console.log(obj)
+  console.log(obj)
 
-    await blogModel.modificarBlogById(obj, req.body.id);
-    res.redirect('/admin/blog');
-    } catch (error) {
+  await blogModel.modificarBlogById(obj, req.body.id);
+  res.redirect('/admin/blog');
+
+  } catch (error) {
     console.log(error)
     res.render('admin/modificar', {
       layout: 'admin/layout',

@@ -1,10 +1,15 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <motion.div className='footer-container'
+      initial={{ y: 250 }}
+      animate={{ y: 0}}
+      transition={{ delay: 1.5, type: "tween"}}
+    >
       <section class='social-media'>
           <small class='website-rights'>Lb Desarrollo Web © 2021</small>
           <div class='social-icons'>
@@ -50,7 +55,7 @@ function Footer() {
             </Link>
           </div>
       </section>
-    </div>
+    </motion.div>
   );
 }
 

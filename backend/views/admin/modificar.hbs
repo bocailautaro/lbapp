@@ -1,9 +1,9 @@
-<div class="container" style="margin: 100px 0">
+<div class="container" style="margin: 100px auto">
     <div class="row">
         <div class="col-6 offset-3">
             <h2>Modificá la entrada del Blog</h2>
+            <form action="/admin/blog/modificar" method="POST" enctype="multipart/form-data">
             <input type="hidden" value="{{entrada.id}}" name="id">
-            <form action="/admin/blog/modificar" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" class="form-control" value="{{entrada.titulo}}" name="titulo">
             </div>

@@ -1,5 +1,4 @@
 .form-container {
-    background: url('./Back5.jpg');
     height: 100%;
     width: 100%;
     display: flex;
@@ -8,49 +7,56 @@
     align-items: center;
     text-align: center;
     box-shadow: 0 -8px 20px -6px black;
-
 }
 
 h1 {
-    color: #fff;
-    font-size: 75px;
+    color: #423f3f;
+    font-size: 95px;
     margin-top: 100px;
     margin-bottom: 100px;
     text-shadow: 1px 1px 2px black;
 }
 
 label {
-    color: #fff;
+    color: #423f3f;
     font-size: 20px;
     padding: 3rem;
 }
 
-input, textarea {
+input {
+    box-shadow: inset 0 2px 20px -6px black;
     display: block;
     border: none;
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 18px;
     padding: 7px;
     width: 400px;
     box-sizing: border-box;
 }
 
-textarea {
+#mensaje {
     min-height: 100%;
     max-height: 100%;
     max-width: 100%;
     height: 250px;
 }
 
-#button {
-    background: #31384a;
+.btn__form {
+    background: #423f3f;
+    width: 40%;
     color: #fff;
     padding: 20px;
+    font-size: 20px;
+    margin: 0 auto;
     margin-bottom: 5rem;
 }
 
-#button:hover {
+.btn__form:hover {
     cursor: pointer;
+}
+
+.exito {
+    color: black;
 }
 
 @media screen and (max-width: 960px) {

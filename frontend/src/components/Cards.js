@@ -1,11 +1,16 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { motion } from 'framer-motion';
 
 function Cards() {
   return (
-    <div className='cards'>
-      <h1>Tecnologías Aplicadas</h1>
+    <motion.div className='cards'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.1, duration: 0.1}}
+    >
+      <h1 className='title'>Tecnologías Aplicadas</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -38,7 +43,7 @@ function Cards() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

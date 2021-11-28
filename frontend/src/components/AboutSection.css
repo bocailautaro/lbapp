@@ -10,18 +10,22 @@
 
 .about__title-container {
     text-align: center;
-    padding: 50px;
   }
   
   .about__title-container > h1 {
-    font-size: 80px;
-    color: #494848;
-    padding: 25px;
+    font-size: 85px;
+    color: #423f3f;
   }
   
   .about__title-container > h2 {
-    font-size: 40px;
+    font-size: 50px;
     color: #494848;
+  }
+
+  .lb {
+    border-radius: 20px;
+    width: 500px;
+    margin-bottom: 2rem;
   }
 
   #intro {
@@ -30,41 +34,17 @@
     font-size: 30px;
     font-family: 'Ubuntu Condensed', sans-serif;
     color: #494848;
-    max-width: 900px;
-    margin-top: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
-  }
-
-  .lb {
-    border-radius: 20px;
-    width: 600px;
+    margin-bottom: 4rem;
   }
   
   @media screen and (max-width: 960px) {
     .about__title-container > h1 {
-      font-size: 60px;
-      margin-top: 10px;
-      margin-bottom: 1rem;
-    }
-
-    .about__title-container > h2 {
-      font-size: 35px;
-    }
-
-    .lb {
-      width: 500px;
-    }
-
-    #intro {
-      font-size: 25px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .about__title-container > h1 {
-      font-size: 55px;
+      font-size: 50px;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
     }
 
     .about__title-container > h2 {
@@ -72,13 +52,31 @@
     }
 
     .lb {
+      width: 350px;
+    }
+
+    #intro {
+      font-size: 22px;
+      max-width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about__title-container > h1 {
+      font-size: 40px;
+    }
+
+    .about__title-container > h2 {
+      font-size: 22px;
+    }
+
+    .lb {
       width: 300px;
     }
   
     #intro {
-      font-size: 19px;
+      font-size: 20px;
       max-width: 400px;
-      margin-top: 1rem;
     }
   }
   

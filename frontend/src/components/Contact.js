@@ -5,7 +5,7 @@ import './Contact.css';
 
 const Contact = () => {
     const [formEnviado, cambiarFormEnviado] = useState(false);
-    const [cargando, guardarCargando] = useState(false);
+    const [guardarCargando] = useState(false);
 
     return (
         <div className='form-container'>
@@ -55,7 +55,6 @@ const Contact = () => {
                                 type='text'
                                 id='nombre'
                                 name='nombre'
-                                placeholder='Tu nombre'
                             />
                             <ErrorMessage
                                 name='nombre'
@@ -70,7 +69,6 @@ const Contact = () => {
                                 type='email'
                                 id='correo'
                                 name='correo'
-                                placeholder='Ingresá tu mail'
                             />
                             <ErrorMessage
                                 name='correo'
@@ -85,7 +83,6 @@ const Contact = () => {
                                 type='textarea'
                                 id='mensaje'
                                 name='mensaje'
-                                placeholder='Dejá tu mensaje'
                             />
                             <ErrorMessage
                                 name='mensaje'

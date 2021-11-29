@@ -17,7 +17,7 @@ function AboutSection() {
         <h2>Desarrollador Web Full Stack</h2>
         <div>
           <img className='lb' src='./images/1.jpg' alt='Lb'/>
-          <p id="intro">Me interesa la implementación de tecnologías y metodologías novedosas. Busco el cuidado en el diseño y el rendimiento del producto. Mi trabajo contempla tanto el despliegue de lo que podrá ver el cliente en la pantalla de su dispositivo (Frontend), como también el despliegue por el lado del servidor, que es dónde se procesan los datos que los usuarios no ven (Backend). Mis proyectos pueden abarcar portfolios personales, blogs, hasta plataformas web para marcas que estén interesadas en vender sus productos vía E-commerce.
+          <p className="intro">Me interesa la implementación de tecnologías y metodologías novedosas. Busco el cuidado en el diseño y el rendimiento del producto. Mi trabajo contempla tanto el despliegue de lo que podrá ver el cliente en la pantalla de su dispositivo (Frontend), como también el despliegue por el lado del servidor, que es dónde se procesan los datos que los usuarios no ven (Backend). Mis proyectos pueden abarcar portfolios personales, blogs, hasta plataformas web para marcas que estén interesadas en vender sus productos vía E-commerce.
           </p>
         </div>
       </div>

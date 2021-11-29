@@ -5,10 +5,10 @@ const BlogItem = (props) => {
 
     return (
         <div className="blog">
-            <h1>{title}</h1>
-            <h2>{subtitle}</h2>
+            <h2>{title}</h2>
+            <h3>{subtitle}</h3>
             <img src={imagen} />
-            <div dangerouslySetInnerHTML={{ __html: body }} />
+            <div className='cuerpo' dangerouslySetInnerHTML={{ __html: body }} />
             <hr />
         </div>
     );

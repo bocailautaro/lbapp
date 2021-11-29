@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './HeroSection.css';
 import { ButtonHero } from './ButtonHero';
 import { motion } from 'framer-motion';
 

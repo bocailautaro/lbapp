@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var blogModel = require('./../models/blogModel');
+var blogModel = require('../models/blogModel');
 var cloudinary = require('cloudinary').v2;
 var nodemailer = require('nodemailer');
 
@@ -10,7 +10,7 @@ router.get('/blog', async function(req, res, next) {
 
   blog = blog.map(blog => {
     if (blog.img_id) {
-      const imagen = cloudinary.image(blog.img_id, {
+      const imagen = cloudinary.url(blog.img_id, {
         width: 960,
         height: 200,
         crop: 'fill'

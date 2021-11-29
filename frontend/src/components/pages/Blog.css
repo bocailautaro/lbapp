@@ -1,9 +1,23 @@
 body {
     text-align: center;
     margin: 0 auto;
+    color: #494848;
 }
 
 h2 {
     font-size: 60px;
-    color: #494848;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+img {
+    padding: 5rem;
+}
+
+.cuerpo {
+    margin: 3rem 15rem;
+    font-size: 20px;
+    line-height: 30px;
 }

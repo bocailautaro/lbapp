@@ -8,18 +8,20 @@
   object-fit: contain;
   box-shadow: 0 8px 20px -6px black;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .lblogohero {
   margin-top: 2rem;
-  height: 200px;
+  height: 400px;
+  margin-bottom: -5rem;
 }
 
 .hero-container > h1 {
   color: #fff;
   font-size: 100px;
   text-shadow: 1px 1px 2px black;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .hero-container > p {
@@ -27,7 +29,11 @@
   font-size: 30px;
   text-shadow: 0.9px 0.9px 1.5px black;
   font-family: 'Ubuntu Condensed', sans-serif;
-  margin-top: -3rem;
+  margin-top: -4rem;
+}
+
+.btns {
+  margin-bottom: 5rem;
 }
 
 .hero-btns {
@@ -40,7 +46,7 @@
 
 @media screen and (max-width: 960px) {
   .lblogohero {
-    height: 150px;
+    height: 350px;
     margin-top: -10rem;
   }
   
@@ -60,8 +66,7 @@
 
 @media screen and (max-width: 768px) {
   .lblogohero {
-    margin-top: 5px;
-    height: 100px;
+    height: 300px;
   }
 
   .hero-container > h1 {

@@ -17,7 +17,32 @@ img {
 }
 
 .cuerpo {
-    margin: 3rem 15rem;
+    margin: 3rem 10rem;
     font-size: 20px;
     line-height: 30px;
 }
+
+@media screen and (max-width: 960px) {
+    h1 {
+      font-size: 60px;
+    }
+    
+    h2 {
+      font-size: 40px;
+      padding: 3rem;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 100vw;
+    }
+
+    .cuerpo {
+        margin: 3rem 5rem;
+        font-size: 18px;
+        line-height: 30px;
+    }
+  }
